@@ -1,7 +1,7 @@
 ---
 title: 'Nextchat多端同步方案'
 description: 'Nextchat多端同步'
-pubDate: '1.21.2026'
+pubDate: '2026-01-22'
 ---
 
 
