@@ -55,4 +55,22 @@ const today = new Date();
 		background: rgba(var(--gray-light), 0.5);
 		transform: translateY(-2px);
 	}
+	@media (max-width: 768px) {
+		footer {
+			padding: 2em 1em;
+			margin-top: 2em;
+			font-size: 0.9em;
+		}
+		.social-links {
+			margin-top: 1em;
+			gap: 0.3em;
+		}
+		.social-links a {
+			padding: 0.4em;
+		}
+		.social-links svg {
+			width: 28px;
+			height: 28px;
+		}
+	}
 </style>

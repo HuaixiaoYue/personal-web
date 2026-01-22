@@ -102,13 +102,30 @@ import HeaderLink from './HeaderLink.astro';
 		background: rgba(var(--gray-light), 0.5);
 		transform: translateY(-2px);
 	}
-	@media (max-width: 720px) {
+	@media (max-width: 768px) {
 		header {
-			padding: 1em;
+			padding: 1em 0.8em;
 		}
+		
+		h2 {
+			font-size: 1em;
+		}
+		
+		nav {
+			flex-wrap: wrap;
+			gap: 0.5em;
+		}
+		
 		.internal-links {
-			gap: 1em;
+			gap: 0.8em;
+			flex-wrap: wrap;
 		}
+		
+		nav a {
+			font-size: 0.85em;
+			padding: 0.3em 0;
+		}
+		
 		.social-links {
 			display: none;
 		}
