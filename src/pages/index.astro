@@ -104,6 +104,7 @@ const postCount = posts.length;
 			
 			.search-container {
 				margin-bottom: 1.5em;
+				margin-top: 0;
 			}
 			
 			.search-box {
@@ -226,62 +227,87 @@ const postCount = posts.length;
 			@media (max-width: 768px) {
 				main {
 					padding: 0.5em;
+					max-width: 90%;
+					display: flex;
+					flex-direction: column;
+					gap: 0;
+					align-items: stretch;
 				}
 				
 				/* 移动端介绍框重新设计 */
 				.profile-card {
 					background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.9));
-					padding: 1em;
-					margin-bottom: 1.5em;
-					border-radius: 16px;
-					box-shadow: 0 4px 12px rgba(var(--gray), 15%);
+					padding: 0.8em;
+					margin: 0.5em 0 1em 0 !important;
+					border-radius: 12px;
+					box-shadow: 0 2px 8px rgba(var(--gray), 10%);
 					display: flex;
 					align-items: center;
-					gap: 1em;
-					position: relative;
+					gap: 0.8em;
+					position: static !important;
+					width: 100%;
+					box-sizing: border-box;
+					order: 1;
+					clear: both;
 				}
 				
 				.profile-card .avatar {
-					width: 80px;
-					height: 80px;
+					width: 60px;
+					height: 60px;
 					margin: 0;
 					flex-shrink: 0;
 				}
 				
 				.profile-card .profile-name {
-					font-size: 1.1em;
-					margin-bottom: 0.3em;
+					font-size: 1em;
+					margin-bottom: 0.2em;
 					text-align: left;
+					line-height: 1.2;
 				}
 				
 				.profile-card .profile-tagline {
-					font-size: 0.8em;
+					font-size: 0.75em;
 					margin-bottom: 0;
 					padding-bottom: 0;
 					border-bottom: none;
 					text-align: left;
+					line-height: 1.3;
+					margin-left: 0.5em;
 				}
 				
 				.profile-card .stats {
-					position: absolute;
-					right: 1em;
-					top: 50%;
-					transform: translateY(-50%);
-					margin: 0;
-				}
-				
-				.stat-icon {
-					font-size: 1.1em;
-				}
-				
-				.stat-number {
-					font-size: 0.9em;
+					display: none;
 				}
 				
 				/* 移动端搜索框 */
+				.blog-section {
+					width: 100%;
+					box-sizing: border-box;
+					margin: 0;
+					padding: 0;
+					order: 2;
+				}
+				
+				.search-container {
+					margin: 0 0 1em 0 !important;
+					padding: 0;
+					width: 100%;
+					box-sizing: border-box;
+					display: block;
+					clear: both;
+				}
+				
+				.search-box {
+					width: 100%;
+					box-sizing: border-box;
+				}
+				
 				.search-input {
 					font-size: 16px; /* 防止iOS缩放 */
 					padding: 0.7em 1em 0.7em 2.3em;
+					width: 100%;
+					box-sizing: border-box;
+					border-radius: 8px;
 				}
 				
 				.search-icon {
@@ -293,19 +319,30 @@ const postCount = posts.length;
 				/* 移动端文章卡片 */
 				.post-item {
 					padding: 1em;
-					margin-bottom: 0.5em;
+					margin-bottom: 0.8em;
+					width: 100%;
+					box-sizing: border-box;
+					border-radius: 10px;
 				}
 				
 				.post-title {
 					font-size: 1.1em;
+					line-height: 1.3;
 				}
 				
 				.post-description {
 					font-size: 0.85em;
+					line-height: 1.5;
 				}
 				
 				.post-meta {
 					font-size: 0.8em;
+					margin-top: 0.8em;
+				}
+				
+				.posts-list {
+					gap: 0.8rem;
+					width: 100%;
 				}
 			}
 		</style>

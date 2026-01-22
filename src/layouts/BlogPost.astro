@@ -43,7 +43,15 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				.prose {
 					width: 100%;
 					max-width: 100%;
-					padding: 1em 0.8em;
+					padding: 1em 1.15em;
+					margin: 0 auto;
+				}
+				.prose p,
+				.prose section,
+				.prose ul,
+				.prose li {
+					padding-left: 0;
+					margin-left: 0;
 				}
 				.title {
 					padding: 0.8em 0;
